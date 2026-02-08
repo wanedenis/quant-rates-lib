@@ -6,7 +6,16 @@
 
 def print_hi(name):
     # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    print("Welcome to tip calculator!")
+    total = float(input("what was the total bill? \n"))
+
+    tip = int(input("How much tip would you like to give? 10, 12, or 15? \n"))
+
+    number = int(input("How many people to split the bill? \n"))
+
+    rounded_tip = round(total * tip / 100, 2)
+
+    print(f'Hi, {name} + each person should pay; {total // number} ')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
 # Press the green button in the gutter to run the script.
